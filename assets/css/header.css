@@ -1,0 +1,159 @@
+.header {
+  width: 100%;
+  height: 120px;
+  background-color: whitesmoke;
+  box-shadow: #f7f3f3;
+}
+
+.navbar {
+  width: 100%;
+  height: 70px;
+
+  color: rgb(18, 18, 17);
+  margin: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+img {
+  width: 150px;
+  height: 100px;
+}
+
+.search-box {
+  position: relative;
+  width: 50%;
+}
+
+.search-box > img {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  top: 35%;
+  transform: translateY(-50%);
+}
+
+.search-box > input {
+  width: 100%;
+  height: 40px;
+  padding-left: 35px;
+  border-radius: 5px;
+  border: none;
+}
+
+.delivery {
+  width: 180px;
+  height: 45px;
+  text-align: center;
+  border-radius: 5px;
+  border: none;
+  color: rgb(41, 104, 41);
+  background-color: rgb(180, 176, 176);
+  font-size: medium;
+  cursor: pointer;
+}
+
+.delivery:nth-child(1) {
+  color: rgb(76, 163, 76);
+  font-weight: bold;
+}
+
+.login {
+  background-color: black;
+  color: rgb(244, 247, 247);
+  width: 160px;
+  height: 45px;
+  text-align: center;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.del {
+  background-color: #f5c2c2;
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.del > img {
+  background-color: #f5b5b5;
+  width: 20px;
+  height: 20px;
+}
+
+.menu {
+  position: relative;
+}
+
+.catgoryBtn {
+
+  background-color: green;
+  color: #fff;
+  font-size: 15px;
+  border: 0;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.left {
+  width: 250px;
+  background: #222;
+  color: white;
+}
+
+.middle {
+  width: 300px;
+  background: #f5f5f5;
+  display: none;
+}
+
+.right {
+  width: 300px;
+  background: white;
+}
+
+ul {
+  list-style: none;
+  padding: 20px;
+}
+
+li {
+  padding: 10px;
+}
+
+.menu{
+  position: relative;
+}
+.dropdownContainer{
+    display: flex;
+    position: absolute;
+    z-index: 99999999999999999;
+   
+    display: none;
+    left: 50px;
+}
+.dropdownContainer.active{
+  display: flex;
+}
+.categories{
+    background-color: black;
+    width: 300px;
+    height: 500px;
+    border-radius: 5px;
+    color: white;
+}
+.subcategories{
+    width: 300px;
+    height: 500px;
+    background-color: rgb(235, 235, 235);
+    border-radius: 5px;
+}
+.children{
+    width: 300px;
+    height: 500px;
+    background-color: white;
+    border-radius: 5px;
+}

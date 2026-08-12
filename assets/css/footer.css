@@ -1,0 +1,65 @@
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: rgb(2, 27, 82);
+    color: white;
+    padding: 20px;
+}
+.footerTop{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+
+}
+.address{
+    width: 200px;
+    color: rgb(137, 139, 139);
+     background-color: rgb(34, 66, 136);
+     border-radius: 4px;
+     padding: 5PX;
+     margin:15px;
+}
+.address > h4{
+        color: rgb(243, 120, 182);
+
+}
+.addres_Content>i{
+    background-color: #09ecec;
+    color: rgb(209, 249, 250);
+    width: 20px;
+    height: 20px;
+  margin: 5px;
+  text-align: center;
+}
+
+.footerBrand{
+    width: 300px;
+    color: rgb(255, 249, 249);
+}
+.footerBrand> h2{
+    color: aqua;
+}
+.footerlink{
+    padding: 5px;
+    margin: 8px;
+    color: rgb(137, 139, 139);
+    font-weight: bold;
+    transition: .5s ease-in-out;
+    /* background-color: rgba(57, 128, 235, 0.1); */
+    border-radius: 1px;
+}
+.footerlink > i{
+    color: rgb(97, 148, 243);
+}
+.footerheading > h2{
+color: aqua;
+}
+.footerlink i{
+    transition: .5s ease-in-out !important;
+}
+.footerlink:hover{
+    color: aqua;
+    background-color: rgb(20, 255, 255,.2);
+    border-radius: 2px;
+}

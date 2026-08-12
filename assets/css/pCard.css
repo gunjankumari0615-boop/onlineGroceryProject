@@ -1,0 +1,97 @@
+.productContainer{
+  width: 80%;
+  margin: auto;
+  background-color: rgb(231, 231, 231);
+  height: 370px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 8px;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+
+}
+.productCard{
+
+  background-color: white;
+  padding: 15px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.slick-slide {
+    margin: 10px;
+  padding: 15px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.cardTop{
+  position: relative;
+  width: 90%;
+}
+.cardTop .batch{
+  position: absolute;
+  background-color: green;
+  color: white;
+  padding: 5px;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  font-size: 10px;
+}
+.cardTop img{
+  width: 100%;
+}
+.delMinute{
+  position: relative;
+  right:-60%;
+  width: 60px;
+  border-radius: 20px;
+  background-color: rgb(0,0,0,.1);
+  color: green;
+  padding-left: 5px;
+  padding-right: 2px;
+  /* font-size: 12px; */
+}
+.delMinute p{
+  font-size: 12px;
+
+}
+.unit{
+  margin-top: 30px;
+  /* margin-bottom: 30px; */
+}
+.unit select{
+  width: 98%;
+  padding: 2px;
+}
+.price{
+  margin-top: 5px;
+}
+.price p{
+  font-weight: bold; 
+}
+.price small{
+  font-weight: lighter;
+  color: gray;
+}
+.buyAndWishlist{
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.buyAndWishlist button{
+  background-color: transparent;
+  border: 1px solid red;
+  padding: 5px;
+  color: red;
+  cursor: pointer;
+  font-size: 13px;
+  flex-grow: .8;
+  border-radius: 5px;
+  /* font-weight: bold; */
+}
+.buyAndWishlist i{
+  padding: 5px;
+  border: 1px solid;
+  cursor: pointer;
+}

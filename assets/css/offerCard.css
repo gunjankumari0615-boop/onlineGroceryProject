@@ -1,0 +1,70 @@
+/* ================= Top Offers ================= */
+
+.topOffersContainer{
+    width:95%;
+    max-width:1280px;
+    margin:40px auto;
+}
+
+.topOfferHeading{
+    margin-bottom:20px;
+}
+
+.topOfferHeading h2{
+    font-size:32px;
+    font-weight:700;
+}
+
+.topOfferCard{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+}
+
+.offer-card{
+    background:#fff;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 3px 12px rgba(0,0,0,.08);
+    transition:.3s;
+    cursor:pointer;
+}
+
+.offer-card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 10px 25px rgba(0,0,0,.18);
+}
+
+.red-box{
+    height:95px;
+    background:linear-gradient(135deg,#e30613,#b40000);
+    color:#fff;
+    display:flex;
+    align-items:flex-end;
+    padding:15px;
+}
+
+.red-box h2{
+    font-size:28px;
+    line-height:1.1;
+}
+
+.whiteBox{
+    padding:18px;
+}
+
+.whiteBox h2{
+    font-size:30px;
+    line-height:1.1;
+    margin-bottom:12px;
+}
+
+.whiteBox a{
+    color:#84c225;
+    font-weight:600;
+    text-decoration:none;
+}
+
+.whiteBox a:hover{
+    text-decoration:underline;
+}
