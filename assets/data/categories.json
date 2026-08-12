@@ -1,0 +1,481 @@
+[
+  {
+    "name": "Electronics",
+    "subcategories": [
+      {
+        "name": "Audio devices",
+        "children": [
+          "Earbuds",
+          "Headphones",
+          "Neckbands",
+          "Speakers & Soundbars",
+          "Wired Earphones"
+        ]
+      },
+      {
+        "name": "Cameras & Accessories",
+        "children": [
+            "Camera Accessories",
+            "Instant Cameras",
+            "Secrurity Cameras"
+        ]
+      },
+      {
+        "name": "Electrical Accessories",
+        "children": [
+            "Batteries",
+            "Chargers & Adaptiors",
+            "Door Bells",
+            "Extension Cord",
+            "Rechargeable Batteries",
+            "Torch & Lights"
+        ]
+      },
+      {
+        "name": "Home Appliances",
+        "children": [
+            "AC's & Coolers",
+            "Air Purifies",
+            "Ceilling Fans",
+            "Dishwaher",
+            "Exhaust & Pedestal Fans",
+            "Garment Steamers",
+            "Geysers & Heaters",
+            "Hand Tools",
+            "Home Accessories",
+            "Immersion Rods",
+            "Irons",
+            "Portable & Table Fans",
+            "Refrigerators",
+            "Room Heaters"
+        ]
+      },
+      {
+        "name": "Kitchen Appliances",
+        "children": [
+            "Blenders & Choppers",
+            "Coffee Makers & Kettles",
+            "Induction Stoves",
+            "Juicer, Mixer & Grinder",
+            "Microwaves & Air Fryers",
+            "Rice Cooker & Roti Maker",
+            "Toaster, Boiler & Yogurt Maker"
+        ]
+      },
+      {
+        "name": "Personal Care & Grooming",
+        "children": [
+            "Body Massagers",
+            "Electric Toothbrush",
+            "Epilators & Trimmers",
+            "Hair Styling Accessories",
+            "Weighing Machine"
+        ]
+      },
+      {
+        "name": "Phone & Laptop Accessory",
+        "children": [
+            "Cables",
+            "Hard Disks & Pendrives",
+            "Keyboard, Mouse & Webcam",
+            "Laptop Stands",
+            "Mobile Holders",
+            "Other Accessories",
+            "Power Banks",
+            "Printers & Ink"
+        ]
+      },
+      {
+        "name": "Phone, Laptop & Tablets",
+        "children": [
+            "Keypad Mobiles",
+            "Laptops",
+            "Smartphones",
+            "Tablets"
+        ]
+      },
+      {
+        "name": "Smart Wearables",
+        "children": [
+            "Smartwatches"
+        ]
+      },
+      {
+        "name": "TVs & Monitors",
+        "children": [
+            "LED TVs",
+            "Monitors"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Fashion",
+    "subcategories": [
+        {
+            "name":"Fashion Essentials",
+            "children":[
+              "Belts",
+              "Eyewear",
+              "Handbags & Wallets",
+              "Jewellery",
+              "Socks",
+              "Watches"
+            ]
+        },
+        {
+            "name":"Footwear",
+            "children":[
+            "Kids Footwear",
+            "Men's Footwear",
+            "Women's Footwear"
+            ]
+        },
+        {
+            "name":"Kids Apparel",
+            "children":[
+            "Boys",
+            "Girls"
+            ]
+        },
+        {
+            "name":"Men's Apparel",
+            "children":[
+              "Active Wear",
+              "Casual",
+              "Ethnic Wear for Men",
+              "Formal",
+              "Innerwear",
+              "Men's Accessories"
+            ]
+        },
+        {
+            "name":"Travel",
+            "children":[
+              "Bags & Backpacks",
+              "Luggage & Accessories",
+              "Organisers & Accessories",
+              "Suitcase & Trolleys"
+            ]
+        },
+        {
+            "name":"Women's Apparel",
+            "children":[
+              "Ethnic Wear for Women",
+              "Lingerie",
+              "Night Wear",
+              "Sports Wear",
+              "Western Wear",
+              "Women's Accessories"
+            ]
+        }
+    ]
+  },
+  {
+    "name": "Food Court",
+    "subcategories": [
+      {
+        "name":"Biryani & Rice Delights",
+        "children":[
+          "Biryani",
+          "Rice"
+        ]
+      },
+      {
+        "name":"Breakfast",
+        "children":[
+          "English Breakfast",
+          "Poha & Upma"
+        ]
+      },
+      {
+        "name":"Burgers & Sandwiches",
+        "children":[
+          "Burgers",
+          "Sandwiches & Subs"
+        ]
+      },
+      {
+        "name":"Cake & Pastry Delights",
+        "children":[
+          "Brownie",
+          "Cakes, Pastries & Muffins",
+          "Pudding & Mousse"
+        ]
+      },
+      {
+        "name":"Cold Beverages",
+        "children":[
+          "Cold Coffee",
+          "Iced Tea",
+          "Sharbats & Lemonades",
+          "Shinkanji & Coolers",
+          "Smoothies & Shakes"
+        ]
+      },
+      {
+        "name":"Hot Beverages",
+        "children":[
+          "Hot Coffee",
+          "Hot Tea",
+          "Instant Milk Drinks"
+        ]
+      },
+      {
+        "name":"Meal Bowls",
+        "children":[
+          "Non-Veg Bowls",
+          "Veg Bowls"
+        ]
+      },
+      {
+        "name":"Pizza & Pasta",
+        "children":[
+          "Pizza"
+        ]
+      },
+      {
+        "name":"Rolls & Wraps",
+        "children":[
+          "Non-Veg Rolls",
+          "Veg Rolls"
+        ]
+      },
+      {
+        "name":"Snack Time",
+        "children":[
+          "Desi Naashta",
+          "Finger Food"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Pharmacy & Wellness",
+    "subcategories": [
+      {
+        "name":"OTC Medicine & Devices",
+        "children":[
+          "Adult Nutrition",
+          "Assorted Devices",
+          "Ayurveda Dermatology Meds",
+          "Baby Food Variety",
+          "Bath & Body Care",
+          "Bone & Muscle Care",
+          "Calcuim Supplements",
+          "Cardiac Care",
+          "Child Care",
+          "Cold & Cough",
+          "Calcuim Supplements"
+        ]
+      },
+      {
+        "name":"OTX Medicine",
+        "children":[
+          "Assorted OTX Meds",
+          "Brain & Nerve Meds",
+          "Cardiac Meds",
+          "Derma Hair Meds",
+          "Eye & Ear Care Meds",
+          "Gastro Meds",
+          "Other Gynae Meds",
+          "Other OTX Meds",
+          "OTX Blood Health Meds",
+          "OTX Dermatology Meds"
+        ]
+      },
+      {
+        "name":"RX Medicine",
+        "children":[
+          "Anti Diabetic Meds",
+          "Antimicrobials",
+          "Assorted Meds",
+          "Blood Health Meds",
+          "Cancer Care Meds",
+          "Ear Care Meds",
+          "Eye Care Meds",
+          "Gastro Intestinal",
+          "Assorted Meds"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Fruits & Vegetables",
+    "subcategories": [
+      {
+        "name":"Cuts & Sprouts",
+        "children":[
+          "Cut &  Peeled Veggies",
+          "Cut Fruit, Tender Coconut",
+          "Fresh Juices & Milkshakes"
+        ]
+      },
+      {
+        "name":"Exotic Fruits & Veggies",
+        "children":[
+          "Biryani",
+          "Rice"
+        ]
+      },
+      {
+        "name":"Flower BouQuets, Bunches",
+        "children":[
+          "Biryani",
+          "Rice"
+        ]
+      },
+      {
+        "name":"Fresh Fruits",
+        "children":[
+          "Biryani",
+          "Rice"
+        ]
+      },
+      {
+        "name":"Fresh Vegetables",
+        "children":[
+          "Biryani",
+          "Rice"
+        ]
+      },
+      {
+        "name":"Herbs & Seasonings",
+        "children":[
+          "Biryani",
+          "Rice"
+        ]
+      },
+      {
+        "name":"Organic Fruits & Vegetables",
+        "children":[
+          "Biryani",
+          "Rice"
+        ]
+      }
+    ]
+
+  },
+  {
+    "name": "Foodgrains, Oil & Masala",
+    "subcategories": [
+            {
+        "name":"Cuts & Sprouts",
+        "children":[
+          "Cut &  Peeled Veggies",
+          "Cut Fruit, Tender Coconut",
+          "Fresh Juices & Milkshakes"
+        ]
+      },
+      {
+        "name":"Exotic Fruits & Veggies",
+        "children":[
+          "Biryani",
+          "Rice"
+        ]
+      },
+      {
+        "name":"Flower BouQuets, Bunches",
+        "children":[
+          "Biryani",
+          "Rice"
+        ]
+      },
+      {
+        "name":"Fresh Fruits",
+        "children":[
+          "Biryani",
+          "Rice"
+        ]
+      },
+      {
+        "name":"Fresh Vegetables",
+        "children":[
+          "Biryani",
+          "Rice"
+        ]
+      },
+      {
+        "name":"Herbs & Seasonings",
+        "children":[
+          "Biryani",
+          "Rice"
+        ]
+      },
+      {
+        "name":"Organic Fruits & Vegetables",
+        "children":[
+          "Biryani",
+          "Rice"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Bakery, Cakes & Dairy",
+    "subcategories": [
+            {
+        "name":"Cuts & Sprouts",
+        "children":[
+          "Cut &  Peeled Veggies",
+          "Cut Fruit, Tender Coconut",
+          "Fresh Juices & Milkshakes"
+        ]
+      },
+      {
+        "name":"Exotic Fruits & Veggies",
+        "children":[
+          "Biryani",
+          "Rice"
+        ]
+      },
+      {
+        "name":"Flower BouQuets, Bunches",
+        "children":[
+          "Biryani",
+          "Rice"
+        ]
+      },
+      {
+        "name":"Fresh Fruits",
+        "children":[
+          "Biryani",
+          "Rice"
+        ]
+      },
+      {
+        "name":"Fresh Vegetables",
+        "children":[
+          "Biryani",
+          "Rice"
+        ]
+      },
+      {
+        "name":"Herbs & Seasonings",
+        "children":[
+          "Biryani",
+          "Rice"
+        ]
+      },
+      {
+        "name":"Organic Fruits & Vegetables",
+        "children":[
+          "Biryani",
+          "Rice"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Beverages",
+    "subcategories": []
+  },
+  {
+    "name": "Snacks & Branded Foods",
+    "subcategories": []
+  },
+  {
+    "name": "Beauty & Hygiene",
+    "subcategories": []
+  }
+]
