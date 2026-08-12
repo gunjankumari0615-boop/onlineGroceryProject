@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+        integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"
+        integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <header class="header">
+
+        <nav class="navbar">
+            <img src="./assets/img/logo-removebg-preview.png" alt="">
+
+            <div class="search-box">
+                <img src="./assets/img/s-removebg-preview.png" alt="search">
+                <input type="search" placeholder="Search for Products">
+            </div>
+            <button class="delivery"><i class="fa fa-flash"></i>Delivery in 10 mins <br> Select Location</button>
+            <button class="login">Login/ Sing <br>Up</button>
+            <button class="del"><img src="./assets/img/t-removebg-preview.png" alt=""></i></button>
+        </nav>
+
+        <div class="menu">
+            <button class="catgoryBtn"> Select by Category <i class="fa fa-angle-down"></i></button>
+            <div class="dropdownContainer">
+                <div class="categories">
+                    <ul></ul>
+                </div>
+                <div class="subcategories">
+                    <ul></ul>
+                </div>
+                <div class="children">
+                    <ul></ul>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <br>
+
+
+
+    <selction class="catergory">
+        <button>EGGS, MEAT AND FISH</button>
+        <button style="background-color: rgb(255, 255, 255); color: white;"><img src="./assets/img/neu.webp"
+                alt=""></button>
+        <button style="background-color: green; color: white;">AYURVEDA</button>
+        <button>BUY MORE SAVE MORE</button>
+        <button>DEALS OF THE WEEK</button>
+        <button>COMBO STORE</button>
+    </selction>
+
+
+
+    <div class="productContainer">
+    </div>
+
+
+
+    <div class="topOffersContainer">
+
+        <div class="topOfferHeading">
+            <h2>Top Offers</h2>
+        </div>
+
+        <div class="topOfferCard">
+
+            <div class="offer-card">
+
+                <div class="red-box">
+                    <h2>DEALS OF </h2>
+                </div>
+                <div class="whiteBox">
+                    <h2>
+                        THE WEEK
+                    </h2>
+                    <a href="#">View offers</a>
+                </div>
+
+            </div>
+            <div class="offer-card">
+
+                <div class="red-box">
+                    <h2>DEALS OF </h2>
+                </div>
+                <div class="whiteBox">
+                    <h2>
+                        THE WEEK
+                    </h2>
+                    <a href="#">View offers</a>
+                </div>
+
+            </div>
+            <div class="offer-card">
+
+                <div class="red-box">
+                    <h2>DEALS OF </h2>
+                </div>
+                <div class="whiteBox">
+                    <h2>
+                        THE WEEK
+                    </h2>
+                    <a href="#">View offers</a>
+                </div>
+
+            </div>
+            <div class="offer-card">
+
+                <div class="red-box">
+                    <h2>DEALS OF </h2>
+                </div>
+                <div class="whiteBox">
+                    <h2>
+                        THE WEEK
+                    </h2>
+                    <a href="#">View offers</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="catHeader">
+        <h2>Fruit and Vegetables</h2>
+    </div>
+
+    <div class="catCardContainer">
+    </div>
+
+
+    <div class="BeveragesHeader">
+        <h2>Beverages</h2>
+    </div>
+
+    <div class="bevCardContainer">
+
+    </div>
+
+    <div class="SnacksHeader">
+        <h2>Snacks Store</h2>
+    </div>
+
+    <div class="SnacksCardContainer">
+
+    </div>
+
+
+    <div class="CleaningHeader">
+        <h2>Cleaning & Household</h2>
+    </div>
+
+    <div class="CleaningCardContainer">
+
+    </div>
+
+
+
+    <script>
+        let slider = document.querySelector(".slider")
+        let i = 0
+        let img = ["./1st.webp", "./iii.webp", "./v.webp", "./vii.webp"]
+
+        slider.style.backgroundImage = `url("${img[i]}")`
+        let prev = () => {
+            i--
+            if (i < 0) {
+                i = img.length - 1
+            }
+            console.log(i);
+            slider.style.backgroundImage = `url("${img[i]}")`
+        }
+        let next = () => {
+            i++
+            if (i > img.length - 1) {
+                i = 0
+            }
+            console.log(img);
+            slider.style.backgroundImage = `url("${img[i]}")`
+        }
+
+        setInterval(next, 2000)
+
+    </script>
+
+
+    <footer>
+        <div class="footerTop">
+            <div>
+                <div class="footerBrand">
+                    <img src="./assets/img/logo-removebg-preview.png">
+                    <h2>Marketplace HUB</h2>
+                    <span>online grocery store</span>
+                    <p>Delivering fresh groceries to your doorstep with a seamless online shopping experience, quality
+                        products, and reliable service for everyday household needs.</p>
+                </div>
+            </div>
+            <div class="footerheading">
+                <h2>
+                    <i class="fa fa-pin"></i>
+                    QUICK LINKS
+                </h2>
+                <div class="footerlink">
+                    <i class="fa fa-angle-right"></i>
+                    Home
+                </div>
+                <div class="footerlink">
+                    <i class="fa fa-angle-right"></i>
+                    Products
+                </div>
+                <div class="footerlink">
+                    <i class="fa fa-angle-right"></i>
+                    Categories
+                </div>
+                <div class="footerlink">
+                    <i class="fa fa-angle-right"></i>
+                    Offers & Deals
+                </div>
+                <div class="footerlink">
+                    <i class="fa fa-angle-right"></i>
+                    Become a Seller
+                </div>
+                <div class="footerlink">
+                    <i class="fa fa-angle-right"></i>
+                    Contact Us
+                </div>
+                <div class="footerlink">
+                    <i class="fa fa-angle-right"></i>
+                    Blog & Recipes
+                </div>
+            </div>
+            <div class="footerheading">
+
+                <h2>
+                    <i class="fa fa-pin"></i>
+                    OUR PRODUCTS
+                </h2>
+                <div class="footerlink">
+                    <i class="fa fa-angle-right"></i>
+                    Fruits & Vegetables
+                </div>
+                <div class="footerlink">
+                    <i class="fa fa-angle-right"></i>
+                    Dairy & Bakery
+                </div>
+                <div class="footerlink">
+                    <i class="fa fa-angle-right"></i>
+                    Grocery & Staples
+                </div>
+                <div class="footerlink">
+                    <i class="fa fa-angle-right"></i>
+                    Beverages
+                </div>
+                <div class="footerlink">
+                    <i class="fa fa-angle-right"></i>
+                    Snacks & Instant Food
+                </div>
+                <div class="footerlink">
+                    <i class="fa fa-angle-right"></i>
+                    Household Essentials
+                </div>
+                <div class="footerlink">
+                    <i class="fa fa-angle-right"></i>
+                    Personal Care
+                </div>
+                <div class="footerlink">
+                    <i class="fa fa-angle-right"></i>
+                    Organic Products
+                </div>
+            </div>
+            <div class="footerheading">
+
+                <h2>
+                    <i class="fa fa-pin"></i>
+                    OUR SERVICES
+                </h2>
+                <div class="footerlink">
+                    <i class="fa fa-angle-right"></i>
+                    Home Delivery
+                </div>
+                <div class="footerlink">
+                    <i class="fa fa-angle-right"></i>
+                    Same-Day Delivery
+                </div>
+                <div class="footerlink">
+                    <i class="fa fa-angle-right"></i>
+                    Order Tracking
+                </div>
+                <div class="footerlink">
+                    <i class="fa fa-angle-right"></i>
+                    Easy Returns
+                </div>
+                <div class="footerlink">
+                    <i class="fa fa-angle-right"></i>
+                    Customer Support
+                </div>
+                <div class="footerlink">
+                    <i class="fa fa-angle-right"></i>
+                    Bulk Grocery Orders
+                </div>
+                <div class="footerlink">
+                    <i class="fa fa-angle-right"></i>
+                    Subscription Plans
+                </div>
+                <div class="footerlink">
+                    <i class="fa fa-angle-right"></i>
+                    Freshness Guarantee
+                </div>
+
+            </div>
+            <div>
+               <div class="footerheading">
+                    <h2>
+                        <i class="fa fa-pin"></i>
+                        Contact US
+                    </h2>
+                    <div class="address">
+                        <h4>Head Office</h4>
+                        <div class="addres_Content">
+                            <i class="fa fa-map-marker"></i>
+                            <p>
+                                Plot No. 21 & 23 Khasra No. 581, Om Sai Enclave Phase-2, Village Dhoom Manik Pur, Gautam
+                                Buddha Nagar, Uttar Pradesh - 203207
+                            </p>
+                        </div>
+                    </div>
+                    <div class="address">
+                        <h4>Phone number</h4>
+                        <div class="addres_Content">
+                            <i class="fa fa-phone"></i>
+                            <p>
+                               +91 9783537907
+                            </p>
+                        </div>
+                    </div>
+                    <div class="address">
+                        <h4>Email address</h4>
+                        <div class="addres_Content">
+                            <i class="fa fa-envelope"></i>
+                            <p>
+                               xyz@gmail.com
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
