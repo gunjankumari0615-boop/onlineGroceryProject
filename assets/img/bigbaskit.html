@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+
+        .container {
+            background-color: whitesmoke;
+            width: 100%;
+            height: 400vh;
+        }
+
+        .header {
+            width: 100%;
+            height: 120px;
+            background-color: whitesmoke;
+            box-shadow: #f7f3f3;
+        }
+
+        .navbar {
+            width: 100%;
+            height: 70px;
+            /* background-color: rgb(36, 102, 235); */
+            color: rgb(18, 18, 17);
+            margin: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        img {
+            width: 130px;
+            height: 130px;
+        }
+
+        .search-box {
+            position: relative;
+            width: 50%;
+        }
+
+        .search-box>img {
+            position: absolute;
+            width: 18px;
+            height: 18px;
+            top: 35%;
+            transform: translateY(-50%);
+
+        }
+
+        .search-box>input {
+            width: 100%;
+            height: 40px;
+            padding-left: 35px;
+            border-radius: 5px;
+            border: none;
+        }
+
+        .delivery {
+            width: 180px;
+            height: 45px;
+            text-align: center;
+            border-radius: 5px;
+            border: none;
+            color: rgb(4, 115, 4);
+            background-color: lightgray;
+            font-size: medium;
+        }
+
+        .login {
+            background-color: black;
+            color: rgb(244, 247, 247);
+            width: 160px;
+            height: 45px;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        .del {
+            background-color: #f5c2c2;
+            border: none;
+            width: 40px;
+            height: 40px;
+            border-radius: 5px;
+        }
+
+        .del>img {
+            background-color: #f5b5b5;
+            width: 20px;
+            height: 20px;
+        }
+
+
+        .menu {
+            position: relative;
+
+        }
+
+        .btn {
+            background-color: green;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            display: flex;
+        }
+
+        .dropdown {
+            height: 300px;
+            display: none;
+            position: absolute;
+            width: 180px;
+            background-color: white;
+            border-radius: 10px;
+        }
+
+        .dropdown.show {
+            display: flex;
+        }
+
+        .left {
+            width: 250px;
+            background: #222;
+            color: white;
+        }
+
+        .middle {
+            width: 300px;
+            background: #f5f5f5;
+            display: none;
+        }
+
+        .right {
+            width: 300px;
+            background: white;
+        }
+
+        ul {
+            list-style: none;
+            padding: 20px;
+        }
+
+        li {
+            padding: 10px;
+        }
+
+
+
+        .catergory {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            background-color: rgba(255, 255, 255, 0.881);
+            margin: 5px;
+            height: 70px;
+        }
+
+        .catergory>button {
+            width: 14%;
+            height: 50px;
+            background-color: #ddd;
+            border: #ddd;
+            border-radius: 10px;
+            font-size: medium ;
+            /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+        }
+
+
+
+        .products {
+            gap: 20px;
+            flex-wrap: wrap;
+            background-color: rgb(245, 248, 251);
+            display: flex;
+            /* width: 500vh;
+            height: 100vh;
+            margin: 5px; */
+        }
+
+        .card {
+            width: 300px;
+            height: 450px;
+            border: 1px solid #ddd;
+            padding: 15px;
+            border-radius: 10px;
+            background-color: white;
+            margin: 10px;
+            /* height: 450px;
+            background-color: rgb(229, 211, 211); */
+        }
+
+        .card>select {
+            width: 270px;
+            height: 20px;
+        }
+
+        .card>img {
+            width: 90%;
+            height: 240px;
+            margin: 10px;
+        }
+
+        .ii {
+            width: 70%;
+            color: red;
+            border-color: red;
+
+        }
+
+        .d {
+            display: flex;
+            margin: 5px;
+            gap: 15px;
+        }
+
+        .offer-card {
+            width: 300px;
+            height: 230px;
+            border: 1px solid #ddd;
+            border-radius: 15px;
+            overflow: hidden;
+            background: white;
+        }
+
+        .red-box {
+            width: 100%;
+            height: 110px;
+            background: #af0404;
+
+            display: flex;
+            align-items: flex-end;
+            padding: 15px;
+        }
+
+        .offer-card h2 {
+            margin: 15px;
+            font-weight: bold;
+        }
+
+        .offer-card a {
+            margin-left: 15px;
+            color: gray;
+            text-decoration: none;
+            font-size: 15px;
+        }
+
+        .m {
+            display: flex;
+            margin: 10px;
+            gap: 10px;
+            width: 90%;
+            height: 200px;
+        }
+
+        .box {
+
+            width: 19%;
+            height: 250px;
+            background-color: rgb(227, 243, 243);
+
+
+        }
+
+        div>img {
+            width: 190px;
+            height: 150px;
+            margin: 7px;
+        }
+
+        .masale {
+            display: flex;
+        }
+
+        .slider {
+            height: 500px;
+            width: 50%;
+            background: url("./images.jpg");
+            background-size: 100% 100%;
+            margin-left: 25%;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div class="container">
+
+        <header class="header">
+
+            <nav class="navbar">
+                <img src="./logo-removebg-preview.png" alt="">
+
+                <div class="search-box">
+                    <img src="./z.png" alt="search">
+                    <input type="search" placeholder="search for Products">
+                </div>
+
+                <!-- <div class="relative grid grid-flow-col gap-x-6">
+                    <div class="sc-cPiKLX ihSqql">
+                        <div class="sc-aXZVg gmgoFr sc-edKZPI kMmTAw">
+                            <div class="flex w-full" data-headlessui-state=""><button class="sc-bhqpjJ egizTe"
+                                    id="headlessui-menu-button-:rc:" type="button" aria-haspopup="menu"
+                                    aria-expanded="false" data-headlessui-state=""><span
+                                        class="Label-sc-15v1nk5-0 sc-iLLODe jnBJRV iHfEBD"><svg width="7" height="10"
+                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M2.014 6.417H.351a.327.327 0 0 1-.308-.186.317.317 0 0 1 .03-.36L4.002.194a.466.466 0 0 1 .232-.174.386.386 0 0 1 .28.011.47.47 0 0 1 .22.186.392.392 0 0 1 .059.28L4.34 4.09h2.047c.147 0 .252.066.314.198a.33.33 0 0 1-.047.372L2.34 9.836a.424.424 0 0 1-.239.15.411.411 0 0 1-.273-.022.449.449 0 0 1-.203-.186.41.41 0 0 1-.053-.28l.442-3.081Z"
+                                                fill="#5E9400"></path>
+                                        </svg><span
+                                            class="Label-sc-15v1nk5-0 jnBJRV ml-1 flex-1 text-sm text-appleGreen-600 font-bold">Delivery
+                                            in 10 mins </span></span><span
+                                        class="Label-sc-15v1nk5-0 jnBJRV w-full inline text-sm text-darkOnyx-600 leading-md truncate"><span
+                                            class="Label-sc-15v1nk5-0 jnBJRV truncate text-sm text-darkOnyx-600 leading-md whitespace-no-wrap">Select
+                                            Location</span></span></button></div>
+                        </div>
+                    </div>
+                </div> -->
+
+                <button class="delivery">Delivery in 10 mins <br> Select Location</button>
+                <button class="login">Login/ Sing <br>Up</button>
+                <button class="del"><img src="./t-removebg-preview.png" alt=""></i></button>
+            </nav>
+
+            <div class="menu">
+
+                <button class="btn">Shop by Category</button>
+
+
+                <div class="dropdown">
+
+                    <div class="left">
+                        <ul>
+                            <li onclick="showMenu('electronics')">Electronics</li>
+                            <li>Fashion</li>
+                            <li>Food Court</li>
+                            <li>Pharma-L1</li>
+                            <li>Fruits & Vegetables</li>
+                            <li>Foodgrains, Oil & Masala</li>
+                        </ul>
+                    </div>
+
+                    <div class="middle" id="electronics">
+                        <ul>
+                            <li>Audio devices</li>
+                            <li>Cameras & Accessories</li>
+                            <li>Electrical Accessories</li>
+                            <li>Home Appliances</li>
+                            <li>Kitchen Appliances</li>
+                            <li>Personal Care & Grooming</li>
+                            <li>Phone & Laptop Accessory</li>
+                            <li>Phone, Laptop & Tablets </li>
+                            <li>Smart Wearables</li>
+                            <li>TVs & Monitors</li>
+                        </ul>
+                    </div>
+
+                    <div class="right">
+                        <ul>
+                            <li>Earbuds</li>
+                            <li>Headphone</li>
+                            <li>Speakers</li>
+                        </ul>
+                    </div>
+
+                    <ul>
+                        <li>Exotic Fruits & Veg</li>
+                        <li>Tea</li>
+                        <li> Ghee</li>
+                        <li>Nandinig</li>
+                        <li>Ayurveda</li>
+                    </ul>
+                </div>
+
+
+            </div>
+
+        </header>
+
+        <br>
+
+
+
+        <selction class="catergory">
+            <button>EGGS, MEAT AND FISH</button>
+            <button style="background-color: black; color: white;">NEUPASS</button>
+            <button style="background-color: green; color: white;">AYURVEDA</button>
+            <button>BUY MORE SAVE MORE</button>
+            <button>DEALS OF THE WEEK</button>
+            <button>COMBO STORE</button>
+        </selction>
+
+        <h2 style="background-color: #f7f7fa;">My Smart Basket</h2>
+
+        <section class="products">
+
+            <div class="card">
+                <img src="./1st.webp" alt="">
+                <p style="text-align: right">10min</p>
+                <p>fresho!</p>
+                <h3>Capsicum - Green</h3>
+                <select>
+                    <option value="1kg">1 kg</option>
+                    <option value="2kg">2 kg</option>
+                    <option value="5kg">5 kg</option>
+                    <option value="10kg">10 kg</option>
+                </select>
+                <p>$96.52</p>
+                <p style="margin-top: auto">
+                    <button>like</button>
+                    <button class="ii">Add</button>
+                </p>
+            </div>
+
+            <div class="card">
+                <img src="./2nd.webp" alt="">
+                <p style="text-align: right">10min</p>
+                <p>fresho!</p>
+                <h3>carrot</h3>
+                <select>
+                    <option value="1kg">1 kg</option>
+                    <option value="2kg">2 kg</option>
+                    <option value="5kg">5 kg</option>
+                    <option value="10kg">10 kg</option>
+                </select>
+                <p>$96.52</p>
+                <p style="margin-top: auto">
+                    <button>like</button>
+                    <button class="ii">Add</button>
+                </p>
+            </div>
+            <div class="card">
+                <img src="./iii.webp" alt="">
+                <p style="text-align: right">10min</p>
+                <p>fresho!</p>
+                <h3>Cauliflower</h3>
+                <select>
+                    <option value="1kg">1 kg</option>
+                    <option value="2kg">2 kg</option>
+                    <option value="5kg">5 kg</option>
+                    <option value="10kg">10 kg</option>
+                </select>
+                <p>$96.52</p>
+                <p style="margin-top: auto">
+                    <button>like</button>
+                    <button class="ii">Add</button>
+                </p>
+            </div>
+            <div class="card">
+                <img src="./iv.webp" alt="">
+                <p style="text-align: right">10min</p>
+                <p>fresho!</p>
+                <h3>coriander</h3>
+                <select>
+                    <option value="1kg">1 kg</option>
+                    <option value="2kg">2 kg</option>
+                    <option value="5kg">5 kg</option>
+                    <option value="10kg">10 kg</option>
+                </select>
+                <p>$96.52</p>
+                <p style="margin-top: auto">
+                    <button>like</button>
+                    <button class="ii">Add</button>
+                </p>
+            </div>
+        </section>
+
+
+
+        <h2>Top Offers</h2>
+
+
+        <div class="d">
+
+            <div class="offer-card">
+                <div class="red-box"></div>
+                <h2>DEALS OF <br> THE WEEK</h2>
+                <a href="#">View offers</a>
+            </div>
+
+            <div class="offer-card">
+                <div class="red-box"></div>
+                <h2>DEALS OF <br> THE WEEK</h2>
+                <a href="#">View offers</a>
+            </div>
+
+            <div class="offer-card">
+                <div class="red-box"></div>
+                <h2>DEALS OF <br> THE WEEK</h2>
+                <a href="#">View offers</a>
+            </div>
+
+            <div class="offer-card">
+                <div class="red-box"></div>
+                <h2>DEALS OF <br> THE WEEK</h2>
+                <a href="#">View offers</a>
+            </div>
+
+        </div>
+
+
+        <h2>Fruit and Vegetables</h2>
+
+        <div class="m">
+            <div class="box">
+                <div>
+                    <img src="./v.webp" alt=""> <br>
+                    <h4>Fresh Vegetables</h4> <br>
+                    <h2>MIN 27% OFF</h2>
+                </div>
+            </div>
+            <div class="box">
+                <div>
+                    <img src="./v.webp" alt=""> <br>
+                    <h4>Fresh Vegetables</h4> <br>
+                    <h2>MIN 27% OFF</h2>
+                </div>
+            </div>
+            <div class="box">
+                <div>
+                    <img src="./v.webp" alt=""> <br>
+                    <h4>Fresh Vegetables</h4> <br>
+                    <h2>MIN 27% OFF</h2>
+                </div>
+            </div>
+            <div class="box">
+                <div>
+                    <img src="./v.webp" alt=""> <br>
+                    <h4>Fresh Vegetables</h4> <br>
+                    <h2>MIN 27% OFF</h2>
+                </div>
+            </div>
+            <div class="box">
+                <div>
+                    <img src="./v.webp" alt=""> <br>
+                    <h4>Fresh Vegetables</h4> <br>
+                    <h2>MIN 27% OFF</h2>
+                </div>
+            </div>
+
+        </div>
+
+        <br>
+        <br>
+        <br>
+
+        <h2>Your Daily Staples</h2>
+
+        <div class="masale">
+            <div class="p">
+                <img src="./vi.webp" alt=""><br>
+            </div>
+
+            <div class="p">
+                <img src="./vi.webp" alt=""><br>
+            </div>
+
+            <div class="p">
+                <img src="./vi.webp" alt=""><br>
+            </div>
+
+            <div class="p">
+                <img src="./vi.webp" alt=""><br>
+            </div>
+
+            <div class="p">
+                <img src="./vi.webp" alt=""><br>
+            </div>
+
+            <div class="p">
+                <img src="./vi.webp" alt=""><br>
+            </div>
+
+        </div>
+
+        <h2>Beverages</h2>
+
+        <div class="masale">
+            <div class="p">
+                <img src="./vii.webp" alt=""><br>
+            </div>
+            <div class="p">
+                <img src="./vii.webp" alt=""><br>
+            </div>
+            <div class="p">
+                <img src="./vii.webp" alt=""><br>
+            </div>
+            <div class="p">
+                <img src="./vii.webp" alt=""><br>
+            </div>
+            <div class="p">
+                <img src="./vii.webp" alt=""><br>
+            </div>
+            <div class="p">
+                <img src="./vii.webp" alt=""><br>
+            </div>
+
+        </div>
+
+        <h2>Snacks Store</h2>
+
+        <div class="masale">
+            <div class="p">
+                <img src="./viii.webp" alt=""><br>
+            </div>
+            <div class="p">
+                <img src="./viii.webp" alt=""><br>
+            </div>
+            <div class="p">
+                <img src="./viii.webp" alt=""><br>
+            </div>
+            <div class="p">
+                <img src="./viii.webp" alt=""><br>
+            </div>
+            <div class="p">
+                <img src="./viii.webp" alt=""><br>
+            </div>
+            <div class="p">
+                <img src="./viii.webp" alt=""><br>
+            </div>
+
+
+        </div>
+
+
+        <h2>Cleaning & Household</h2>
+
+        <div class="masale">
+            <div class="p">
+                <img src="./x.webp" alt=""><br>
+            </div>
+            <div class="p">
+                <img src="./x.webp" alt=""><br>
+            </div>
+            <div class="p">
+                <img src="./x.webp" alt=""><br>
+            </div>
+            <div class="p">
+                <img src="./x.webp" alt=""><br>
+            </div>
+            <div class="p">
+                <img src="./x.webp" alt=""><br>
+            </div>
+            <div class="p">
+                <img src="./x.webp" alt=""><br>
+            </div>
+
+
+        </div>
+
+
+        <h2>Beauty and Hygiene</h2>
+
+        <div class="masale">
+            <div class="p">
+                <img src="./h.webp" alt=""><br>
+            </div>
+            <div class="p">
+                <img src="./h.webp" alt=""><br>
+            </div>
+            <div class="p">
+                <img src="./h.webp" alt=""><br>
+            </div>
+            <div class="p">
+                <img src="./h.webp" alt=""><br>
+            </div>
+            <div class="p">
+                <img src="./h.webp" alt=""><br>
+            </div>
+            <div class="p">
+                <img src="./h.webp" alt=""><br>
+            </div>
+
+
+
+
+
+        </div>
+
+
+        <h2>Home and Kitchen</h2>
+
+        <div class="masale">
+            <div class="p">
+                <img src="./xi.webp" alt=""><br>
+            </div>
+            <div class="p">
+                <img src="./xi.webp" alt=""><br>
+            </div>
+            <div class="p">
+                <img src="./xi.webp" alt=""><br>
+            </div>
+            <div class="p">
+                <img src="./xi.webp" alt=""><br>
+            </div>
+            <div class="p">
+                <img src="./xi.webp" alt=""><br>
+            </div>
+            <div class="p">
+                <img src="./xi.webp" alt=""><br>
+            </div>
+
+        </div>
+
+
+        <div class="slider"></div>
+
+        <button onclick="prev()">&lt</button>
+        <button onclick="prev()">&gt</button>
+        <br>
+
+        bigbasket – online grocery store
+        Did you ever imagine that the freshest of fruits and vegetables, top-quality pulses and food grains, dairy
+        products, and hundreds of branded items could be handpicked and delivered to your home, all at the click of a
+        button? In today's fast-paced world, bigbasket.com, India's pioneering online grocery store, continues to bring
+        a staggering array of over 40,000 products from more than 1,000 brands to the doorsteps of over 10 million
+        satisfied customers. From essential household cleaning products to the latest beauty and makeup trends,
+        bigbasket remains your one-stop shop for daily needs.
+
+        <br>
+
+
+        In these times, we've eliminated the stress associated with shopping for daily essentials. You can now
+        effortlessly order all your household products and groceries online. Plus, the added convenience of finding all
+        your requirements at a single source, coupled with substantial savings, demonstrates that bigbasket, India's
+        largest online supermarket, has transformed the way we shop for groceries. Online grocery shopping has become
+        second nature. And when it comes to freshness, whether it's fruits and vegetables or dairy and meat, we've got
+        you covered! Easily obtain fresh eggs, meat, fish, and more with just a few clicks.
+
+        <br>
+
+        We now serve 300+ cities and towns across India and ensure swift delivery times, guaranteeing that all your
+        groceries, snacks and branded foods reach you on time.
+
+        <br>
+
+        Slotted Delivery: Choose the most convenient delivery slot to receive your groceries, ranging from early morning
+        delivery for early birds to late-night delivery for those on the night shift. bigbasket caters to every
+        schedule.
+
+        <br>
+
+        Instant delivery from bbnow: In response to the ever-increasing demand for convenience, bbnow by bigbasket
+        offers lightning-fast grocery delivery, ensuring that your essentials are at your doorstep within 15-30 minutes.
+        Our quick delivery service has revolutionized the way you shop for groceries. Choose from 5000+ grocery
+        essentials. bbnow is available only in select cities.
+
+        <br>
+
+        Whether it's a last-minute dinner party or you simply need something urgently, we've got you covered. This
+        service exemplifies our commitment to providing you with not just the widest range of products but also the
+        fastest and most efficient shopping experience, making bigbasket.com the go-to destination for all your
+        immediate grocery needs.
+    </div>
+
+
+    <script>
+        const btn = document.querySelector(".btn");
+        const dropdown = document.querySelector(".dropdown");
+
+        btn.onclick = function () {
+            dropdown.classList.toggle("show");
+        }
+
+        function showMenu(id) {
+            let menus =
+                document.querySelectorAll(".middle");
+            menus.forEach(function (menu) {
+                menu.style.display = "none";
+            });
+
+            document.getElementById(id).style.display = "block";
+        }
+
+
+
+
+        let slider = document.querySelector(".slider")
+        let i = 0
+        let img = ["./1st.webp", "./iii.webp", "./v.webp", "./vii.webp"]
+
+        slider.style.backgroundImage = `url("${img[i]}")`
+        let prev = () => {
+            i--
+            if (i < 0) {
+                i = img.length - 1
+            }
+            console.log(i);
+            slider.style.backgroundImage = `url("${img[i]}")`
+        }
+        let next = () => {
+            i++
+            if (i > img.length - 1) {
+                i = 0
+            }
+            console.log(img);
+            slider.style.backgroundImage = `url("${img[i]}")`
+        }
+
+        setInterval(next, 2000)
+
+    </script>
+
+
+
+
+</body>
+
+</html>
