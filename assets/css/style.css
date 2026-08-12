@@ -1,1 +1,72 @@
 
+@import url("./header.css");
+@import url("./pCard.css");
+@import url("./offerCard.css");
+@import url("./catCard.css");
+@import url("./footer.css");
+body{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+    overflow-x: hidden;
+    background-color: lightgray;
+}
+p,h1,h2,h3,h4,h5,h6{
+  margin: 0;
+  padding: 0;
+}
+.container {
+  background-color: whitesmoke;
+  width: 100%;
+  height: 700vh;
+}
+
+
+.catergory {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: rgba(255, 255, 255, 0.881);
+  margin: 5px;
+  height: 70px;
+}
+
+.catergory > button {
+  width: 14%;
+  height: 50px;
+  background-color: #ddd;
+  border: #ddd;
+  border-radius: 10px;
+  font-size: medium;
+}
+.catergory> button >img{
+  width: 100%;
+  height: 100%;
+}
+  
+.catergory > button:hover{
+
+    transform:translateY(-5px);
+    box-shadow:0 8px 18px rgba(0,0,0,.15);
+
+}
+
+
+
+
+@media (max-width: 992px) {
+    .products {
+        gap: 15px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+
+    .product {
+        flex: 1 1 100%;
+    }
+}
